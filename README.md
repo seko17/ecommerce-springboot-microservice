@@ -34,23 +34,29 @@ This repository contains an e-commerce application built using a microservices a
      - Sends notifications to customers.
      - Uses Kafka as a message broker for asynchronous communication.
      - Stores notification data in MongoDB.
+     
+4. **Keycloak**
+   - Provides authentication and authorization for all services.
+   - Manages user roles and permissions.
+   - For more information on setting up and using Keycloak, visit the [Keycloak Documentation](https://www.keycloak.org/documentation).
 
-4. **Message Broker (Kafka)**
+
+5. **Message Broker (Kafka)**
    - Facilitates asynchronous communication between services.
    - Ensures that order and payment confirmations are processed reliably.
 
-5. **Distributed Tracing (Zipkin)**
+6. **Distributed Tracing (Zipkin)**
    - Provides distributed tracing to monitor and troubleshoot the flow of requests across microservices.
 
-6. **Service Discovery (Eureka Server)**
+7. **Service Discovery (Eureka Server)**
    - Manages service registration and discovery.
    - Ensures that microservices can dynamically discover and communicate with each other.
 
-7. **Configuration Server**
+8. **Configuration Server**
    - Centralized configuration management for all microservices.
    - Stores configuration files in a Git repository.
 
-8. **Databases**
+9. **Databases**
    - **MongoDB**: Used by Customer and Notification services for data storage.
    - **PostgreSQL**: Used by Product and Order services for data storage.
 
@@ -73,6 +79,7 @@ This repository contains an e-commerce application built using a microservices a
 **Technologies Used**
 - Spring Boot: Framework for building Java-based microservices.
 - Angular: Frontend framework.
+- Keycloak: Authentication and authorization.
 - Kafka: Message broker for asynchronous communication.
 - Eureka: Service discovery.
 - Zipkin: Distributed tracing.
